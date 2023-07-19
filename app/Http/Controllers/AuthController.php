@@ -33,6 +33,7 @@ class AuthController extends Controller
             return response()->json(['error' => 'Please Registered an account'], 401);
         }
 
+
         return $this->respondWithToken($token);
     }
 
